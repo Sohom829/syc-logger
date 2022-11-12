@@ -942,6 +942,8 @@ const renderLines = (amount: number, color: string = "#FFFFFF") => {
     );
   } else if (amount === 40) {
     console.log(Color(bigLine));
+  } else if (typeof amount !== "number") {
+    throw new TypeError("Amount is not string");
   } else {
     throw new ReferenceError("Maximum amount of line is 40.");
   }
