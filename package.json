@@ -1,0 +1,35 @@
+{
+  "name": "syc-logger",
+  "version": "0.0.1",
+  "description": "An advanced logger for your terminal",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "test": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sohom829/syc-logger.git"
+  },
+  "keywords": [
+    "Logger",
+    "Colors",
+    "Background"
+  ],
+  "author": "Mohtasim Alam Sohom",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sohom829/syc-logger/issues"
+  },
+  "homepage": "https://github.com/Sohom829/syc-logger#readme",
+  "devDependencies": {
+    "@types/node": "^18.11.9"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "moment": "^2.29.4"
+  },
+  "engines": {
+    "node": "^17.x"
+  }
+}
