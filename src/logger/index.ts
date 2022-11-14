@@ -8,4 +8,6 @@ export {
   logTimeAsync,
   logDateAsync,
 } from "./timeLogger";
+export { renderDoubledLines, renderDoubledLinesAsync } from "./doubledLines";
+export { renderTripleLinesAsync, renderTripleLines } from "./tripleLines";
 export { logPCInfo } from "./PCInfo";
