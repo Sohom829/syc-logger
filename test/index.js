@@ -7,6 +7,10 @@ const {
   logPCInfo,
   logTaDAsync,
   renderLinesAsync,
+  renderDoubledLines,
+  renderTripleLinesAsync,
+  renderTripleLines,
+  renderDoubledLinesAsync,
 } = require("../dist/index");
 
 const logColor = (message) => {
@@ -15,7 +19,13 @@ const logColor = (message) => {
 
 const PCInfo = new logPCInfo();
 
+PCInfo.getCPUInfo();
 PCInfo.getPCUSerInfo();
+
+console.log(renderDoubledLinesAsync(20));
+console.log(renderTripleLinesAsync(10));
+renderDoubledLines(20);
+renderTripleLines(20);
 
 console.log(renderLinesAsync(40, "#808000"));
 logColor("Hi");
