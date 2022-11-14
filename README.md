@@ -22,6 +22,9 @@ yarn add syc-logger@latest
 - Unique Colors
 - Line Logger
 - Time Logger
+- Line Logger
+- Async Functions Logger
+- PC Info Logger
 
 ## Documentation
 
@@ -170,6 +173,22 @@ renderLines(20, "#808000");
 
 **NOTE: The maximum amount of `renderLines` is 40. You cannot add more than 40**
 
+The limit is only 40 but you can use doubled renderLines instead.
+
+```js
+const { renderDoubledLines } = require("syc-logger");
+
+renderDoubledLines(20); // You can use color here as well
+```
+
+But if your console is like a huge TV then you can use `renderTripleLines`
+
+```js
+const { renderTripleLines } = require("syc-logger");
+
+renderTripleLines(20); // You can use color here as well as the last one
+```
+
 ### Async fuctions
 
 Now, you want a function that don't log a anything but do what it does.
@@ -200,16 +219,37 @@ Now we've logged the varibale that we'd declared in earlier code.
 - logDateAsync(color?: string | undefined)
 - logTaDAsync(color?: string | undefined)
 - renderLinesAsync(amount: number, color?: string | undefined)
+- logPCInfo(): Constructor
 
-## 0.1.0
+### How to use PCInfo constructor
 
-- Added Async Funtions
-- Added 2 unique colors
+```js
+const { logPCInfo } = require("syc-logger");
 
-## 0.1.1 (Spoiler)
+const PCInfo = new logPCInfo();
 
-- PCInfo Sync
-- PCInfo Async
+PCInfo.getPCCPUInfo(); // It will log CPU Info
+```
+
+You can use Async Function here as well
+
+```js
+const { logPCInfo } = require("syc-logger");
+
+const PCInfo = new logPCInfo();
+
+const CPUInfo = PCInfo.getPCCPUInfoAsync(); // It will get the CPU Info
+
+console.log(CPUInfo); // It will log the CPU Info
+```
+
+If you want know all about CPU kindly read this [documentation](https://www.w3schools.com/nodejs/ref_os.asp)
+
+#### Changes
+
+- cpus(): getPCCPUInfo() / getPCCPUInfoAsync
+- arch(): getPCArch() / getPCArch()
+- uptime(): getPCUptime() / getPCUptimeAsync()
 
 ## LICENSE
 
