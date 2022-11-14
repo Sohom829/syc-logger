@@ -1,3 +1,11 @@
-export { renderLines } from "./lines";
+export { renderLines, renderLinesAsync } from "./lines";
 export { basicColors } from "./utils";
-export { logTime, logDate, logTaD } from "./timeLogger";
+export {
+  logDate,
+  logTime,
+  logTaD,
+  logTaDAsync,
+  logTimeAsync,
+  logDateAsync,
+} from "./timeLogger";
+export { logPCInfo } from "./PCInfo";
