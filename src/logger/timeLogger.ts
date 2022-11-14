@@ -19,4 +19,23 @@ const logTaD = (color: string = "#FFFFFF") => {
   console.log(Color(date));
 };
 
-export { logDate, logTime, logTaD };
+const logDateAsync = (color: string = "#FFFFFF") => {
+  const Color = chalk.hex(`${color}`);
+  const date = Color(`${moment().format("DD-MM-YYYY")}`);
+};
+
+const logTimeAsync = (color: string = "#FFFFFF") => {
+  const Color = chalk.hex(`${color}`);
+  const date = Color(`${moment().format("hh:mm:ss")}`);
+
+  return date;
+};
+
+const logTaDAsync = (color: string = "#FFFFFF") => {
+  const Color = chalk.hex(`${color}`);
+  const date = Color(`${moment().format("DD-MM-YYYY hh:mm:ss")}`);
+
+  return date;
+};
+
+export { logDate, logTime, logTaD, logTaDAsync, logTimeAsync, logDateAsync };
