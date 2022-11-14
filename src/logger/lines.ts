@@ -949,4 +949,839 @@ const renderLines = (amount: number, color: string = "#FFFFFF") => {
   }
 };
 
-export { renderLines };
+const renderLinesAsync = (amount: number, color: string = "#FFFFFF") => {
+  const Color = chalk.hex(`${color}`) || null;
+  if (amount === 1) {
+    return Color(line);
+  } else if (amount === 2) {
+    return Color(line + line);
+  } else if (amount === 3) {
+    return Color(line + line + line);
+  } else if (amount === 4) {
+    return Color(line + line + line + line);
+  } else if (amount === 5) {
+    return Color(line + line + line + line + line);
+  } else if (amount === 6) {
+    return Color(line + line + line + line + line + line);
+  } else if (amount === 7) {
+    return Color(line + line + line + line + line + line + line);
+  } else if (amount === 8) {
+    return Color(line + line + line + line + line + line + line + line);
+  } else if (amount === 9) {
+    return Color(line + line + line + line + line + line + line + line + line);
+  } else if (amount === 10) {
+    return Color(
+      line + line + line + line + line + line + line + line + line + line
+    );
+  } else if (amount === 11) {
+    return Color(
+      line + line + line + line + line + line + line + line + line + line + line
+    );
+  } else if (amount === 12) {
+    return Color(
+      line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line
+    );
+  } else if (amount === 13) {
+    return Color(
+      line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line
+    );
+  } else if (amount === 14) {
+    return Color(
+      line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line
+    );
+  } else if (amount === 15) {
+    return Color(
+      line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line
+    );
+  } else if (amount === 16) {
+    return Color(
+      line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line
+    );
+  } else if (amount === 17) {
+    return Color(
+      line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line
+    );
+  } else if (amount === 18) {
+    return Color(
+      line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line
+    );
+  } else if (amount === 19) {
+    return Color(
+      line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line
+    );
+  } else if (amount === 20) {
+    return Color(
+      line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line
+    );
+  } else if (amount === 21) {
+    return Color(
+      line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line
+    );
+  } else if (amount === 22) {
+    return Color(
+      line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line
+    );
+  } else if (amount === 23) {
+    return Color(
+      line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line
+    );
+  } else if (amount === 24) {
+    return Color(
+      line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line
+    );
+  } else if (amount === 25) {
+    return Color(
+      line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line
+    );
+  } else if (amount === 26) {
+    return Color(
+      line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line
+    );
+  } else if (amount === 27) {
+    return Color(
+      line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line
+    );
+  } else if (amount === 28) {
+    return Color(
+      line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line
+    );
+  } else if (amount === 29) {
+    return Color(
+      line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line
+    );
+  } else if (amount === 30) {
+    return Color(
+      line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line
+    );
+  } else if (amount === 31) {
+    return Color(
+      line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line
+    );
+  } else if (amount === 32) {
+    return Color(
+      line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line
+    );
+  } else if (amount === 33) {
+    return Color(
+      line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line
+    );
+  } else if (amount === 34) {
+    return Color(
+      line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line
+    );
+  } else if (amount === 35) {
+    return Color(
+      line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line
+    );
+  } else if (amount === 36) {
+    return Color(
+      line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line
+    );
+  } else if (amount === 37) {
+    return Color(
+      line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line
+    );
+  } else if (amount === 38) {
+    return Color(
+      line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line
+    );
+  } else if (amount === 39) {
+    return Color(
+      line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line +
+        line
+    );
+  } else if (amount === 40) {
+    return Color(bigLine);
+  } else if (typeof amount !== "number") {
+    throw new TypeError("Amount is not string");
+  } else {
+    throw new ReferenceError("Maximum amount of line is 40.");
+  }
+};
+
+export { renderLines, renderLinesAsync };
