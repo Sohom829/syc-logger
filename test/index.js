@@ -11,7 +11,7 @@ const {
   renderTripleLinesAsync,
   renderTripleLines,
   renderDoubledLinesAsync,
-} = require("../dist/index");
+} = require("syc-logger");
 
 const logColor = (message) => {
   console.log(basicColors.seaGreen(message));

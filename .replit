@@ -1,4 +1,4 @@
-run = "node ./test/index.js"
+run = "npm run test"
 
 [languages.typescript]
 pattern = "**/{*.ts,*.js,*.tsx,*.jsx}"
