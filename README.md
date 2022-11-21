@@ -18,6 +18,7 @@ yarn add syc-logger@latest
 
 ## Features
 
+- Emoji logger
 - Hex Color Support
 - Unique Colors
 - Line Logger
@@ -250,6 +251,27 @@ If you want know all about CPU kindly read this [documentation](https://www.w3sc
 - cpus(): getPCCPUInfo() / getPCCPUInfoAsync
 - arch(): getPCArch() / getPCArch()
 - uptime(): getPCUptime() / getPCUptimeAsync()
+
+### How to log Emojis?
+
+If you want to log a message with Emoji. You can try our `logEmoji`
+and `logEmojiAsync` function
+
+#### Option
+
+```ts
+logEmoji(message: any, style: number, color: string, emoji: string)
+```
+
+Example:
+```js
+const { logEmoji } = require("syc-logger");
+
+logEmoji("Message!"); // Default Emoji "✅"
+
+```
+
+I'm not talking about async because you already know what it does
 
 ## LICENSE
 
