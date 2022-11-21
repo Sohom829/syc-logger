@@ -11,11 +11,17 @@ const {
   renderTripleLinesAsync,
   renderTripleLines,
   renderDoubledLinesAsync,
-} = require("syc-logger");
+renderDots,
+  logEmoji
+
+} = require("../dist/index");
 
 const logColor = (message) => {
   console.log(basicColors.seaGreen(message));
 };
+renderDots(40);
+
+logEmoji("Working")
 
 const PCInfo = new logPCInfo();
 
