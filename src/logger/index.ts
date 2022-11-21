@@ -11,3 +11,5 @@ export {
 export { renderDoubledLines, renderDoubledLinesAsync } from "./doubledLines";
 export { renderTripleLinesAsync, renderTripleLines } from "./tripleLines";
 export { logPCInfo } from "./PCInfo";
+export { renderDots, renderDotsAsync } from "./dots";
+export { logEmoji, logEmojiAsync } from "./emoji"
