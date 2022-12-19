@@ -15,6 +15,10 @@ const logEmoji = (
     console.log(emoji + Color("  〙" + message));
   } else if (style === 4) {
     console.log(emoji + Color("  ﹞ " + message));
+  } else if (style === 5) {
+    console.log(emoji + Color(" > " + message));
+  } else if (style === 6) {
+    console.log(emoji + Color(" ⟭ " + message));
   } else {
     throw new TypeError(`Syc-Logger doesn\'t have ${style}th style`);
   }
@@ -35,8 +39,12 @@ const logEmojiAsync = (
     return emoji + Color("  〙" + message);
   } else if (style === 4) {
     return emoji + Color("  ﹞ " + message);
+  } else if (style === 5) {
+    return emoji + Color(" > " + message);
+  } else if (style === 6) {
+    return emoji + Color(" ⟭ " + message);
   } else {
-    return new TypeError(`Syc-Logger doesn\'t have ${style}th style`);
+    throw new TypeError(`Syc-Logger doesn\'t have ${style}th style`);
   }
 };
 
