@@ -11,9 +11,8 @@ const {
   renderTripleLinesAsync,
   renderTripleLines,
   renderDoubledLinesAsync,
-renderDots,
-  logEmoji
-
+  renderDots,
+  logEmoji,
 } = require("../dist/index");
 
 const logColor = (message) => {
@@ -21,7 +20,7 @@ const logColor = (message) => {
 };
 renderDots(40);
 
-logEmoji("Working")
+logEmoji("Working");
 
 const PCInfo = new logPCInfo();
 
